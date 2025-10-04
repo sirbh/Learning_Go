@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"learn/utils"
+)
 
 func main() {
-    fmt.Println("Hello from VS Code + Go!")
+	fmt.Println(utils.Add(2, 3))
+
 }
