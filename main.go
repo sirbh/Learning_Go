@@ -2,10 +2,14 @@ package main
 
 import (
 	"fmt"
-	"learn/utils"
+	"learn/testProgs"
 )
 
 func main() {
-	fmt.Println(utils.Add(2, 3))
+	str := "hello world"
+	counts := testProgs.CharCounter(str)
 
+	for ch, count := range counts {
+		fmt.Printf("%q : %d\n", ch, count)
+	}
 }
